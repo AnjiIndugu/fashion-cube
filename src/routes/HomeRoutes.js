@@ -17,6 +17,13 @@ import CategoryContainer from "../views/Category/CategoryContainer";
 
 var routes = [
   {
+    path: "/",
+    exact: true,
+    layout: BaseLayout,
+    component: () => <Redirect to="/fashion-cube" />,
+  },
+
+  {
     path: "/fashion-cube",
     exact: true,
     layout: BaseLayout,
